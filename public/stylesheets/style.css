@@ -1,0 +1,12 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+main h2 {text-align: center;}
+#content { display: flex; flex-wrap: wrap;}
+.card { margin: 20px 100px 50px 0; box-shadow: 1px 1px 3px black}
+#card { margin: 50px auto;}
