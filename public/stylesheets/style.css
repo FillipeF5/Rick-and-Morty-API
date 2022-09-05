@@ -10,3 +10,5 @@ main h2 {text-align: center;}
 #content { display: flex; flex-wrap: wrap;}
 .card { margin: 20px 100px 50px 0; box-shadow: 1px 1px 3px black}
 #card { margin: 50px auto;}
+#search { justify-content: center; margin: 20px;}
+#inputSearch { width: 300px; }

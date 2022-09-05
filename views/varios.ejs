@@ -14,37 +14,21 @@
 <body>
     <main>
         
-        <h2>Buscando e exibindo personagens</h2>
-
-        
-            <form action="/character" method="post" class="row g-3" id="search">
-
-                <div class="col-auto">
-                    <label for="inputSearch" class="visually-hidden"></label>
-                    <input type="text" class="form-control" id="inputSearch" name="characterInput" placeholder="character name">
-                </div>
-
-                <div class="col-auto">
-                    <button type="submit" class="btn btn-primary mb-3">Buscar</button>
-                </div>
-
-            </form>
-
-       
+        <h2>Listando quantos personagens quiser usando a url</h2>
 
         <div class="container" id="content">
             
             <% data.forEach(data => { %>
-            <div class="card" style="width: 18rem;" id="card">
+            <div class="card" style="width: 16rem;">
                 <img src="https://rickandmortyapi.com/api/character/avatar/<%= data.id %>.jpeg" class="card-img-top" alt="">
                 <div class="card-body">
                   <h5 class="card-title"><%= data.name %></h5>
-                  <p class="card-text">Hey, I'm a <%= data.species %>, <%= data.gender %>, from <%= data.location.name %> </p>
+                  <p class="card-text">Hey, I'm a <%= data.species %>, from <%= data.location.name %> </p>
                 </div>
             </div>
             <% }) %>
 
-         </div>
+        </div>
 
     </main>
 
